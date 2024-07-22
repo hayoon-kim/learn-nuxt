@@ -11,7 +11,7 @@
       <div class="side-panel">
         <p class="name">{{ product.name }}</p>
         <p class="price">{{ product.price }}</p>
-        <button type="button" @click="addToCart">Add to Cart</button>
+        <button type="button" @click="addToCart">Add to a Cart</button>
       </div>
     </div>
   </div>
@@ -19,7 +19,7 @@
 
 <script>
 // import axios from 'axios'
-import { fetchProductById } from '@/api/index'
+import { fetchProductById, createCartItem } from '@/api'
 
 export default {
   async asyncData({ params }) {
@@ -29,7 +29,9 @@ export default {
   },
 
   methods: {
-    addToCart() {
+    async addToCart() {
+      const response = await createCartItem(this.product)
+      console.log(response)
       this.$store.commit('addCartItem', this.product)
       this.$router.push('/cart')
     },

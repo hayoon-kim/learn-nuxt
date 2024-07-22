@@ -193,6 +193,30 @@
       "name": "Awesome Concrete Shirt",
       "price": "165.00",
       "imageUrl": "https://picsum.photos/640/480"
+    },
+    {
+      "id": 2,
+      "name": "Handcrafted Frozen Pizza",
+      "price": "315.00",
+      "imageUrl": "https://picsum.photos/640/480"
+    },
+    {
+      "id": 3,
+      "name": "Practical Metal Gloves",
+      "price": "702.00",
+      "imageUrl": "https://picsum.photos/640/480"
+    },
+    {
+      "id": 6,
+      "name": "Handmade Granite Mouse",
+      "price": "591.00",
+      "imageUrl": "https://picsum.photos/640/480"
+    },
+    {
+      "id": 17,
+      "name": "Sleek Soft Shirt",
+      "price": "654.00",
+      "imageUrl": "https://picsum.photos/640/480"
     }
   ]
 }

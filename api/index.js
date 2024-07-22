@@ -12,4 +12,17 @@ function fetchProductByKeyword(keyword) {
   return instance.get(`/products`, { params: { name_like: keyword } })
 }
 
-export { fetchProductById, fetchProductByKeyword }
+function fetchCartItems() {
+  return instance.get('/carts')
+}
+
+function createCartItem(cartItem) {
+  return instance.post('/carts', cartItem)
+}
+
+export {
+  fetchProductById,
+  fetchProductByKeyword,
+  fetchCartItems,
+  createCartItem,
+}
