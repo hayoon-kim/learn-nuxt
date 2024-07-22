@@ -1,19 +1,27 @@
 <template>
-  <div>
-    <header>
-      <h1>
-        <NuxtLink to="/">Nuxt Shopping</NuxtLink>
-      </h1>
+  <div class="">
+    <header class="title">
+      <nuxt-link class="logo" to="/">Nuxt Shopping</nuxt-link>
     </header>
-    <Nuxt></Nuxt>
+    <nuxt></nuxt>
   </div>
 </template>
 
 <script>
-export default {
-  layout: 'error',
-  props: ['error'], // you can set a custom layout for the error page
-}
+export default {}
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+.logo {
+  font-weight: 900;
+}
+.logo:visited {
+  color: inherit;
+}
+</style>

@@ -25,7 +25,6 @@ export default {
   async asyncData({ params }) {
     const response = await fetchProductById(params.id)
     const product = response.data
-    console.log(product)
     return { product }
   },
 }
