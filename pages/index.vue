@@ -18,7 +18,7 @@
         </li>
       </ul>
       <div class="cart-wrapper">
-        <!-- <button class="btn" @click="routeToCartPage">장바구니 바로가기</button> -->
+        <button class="btn" @click="routeToCartPage">장바구니 바로가기</button>
       </div>
     </main>
   </div>
@@ -54,6 +54,9 @@ export default {
     },
     routeToDetailPage(id) {
       this.$router.push(`detail/${id}`)
+    },
+    routeToCartPage() {
+      this.$router.push(`/cart`)
     },
   },
 }
